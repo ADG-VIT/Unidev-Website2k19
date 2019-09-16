@@ -12,7 +12,7 @@ const WhenColumnOne = () => {
     return (
         <div className="ColumnOne">
             <Logo className="Logo"/>
-            {/* <Image source={map} /> */}
+            <Image source={map} className="image" />
             <SubPara intext={text} />           
         </div>
     );

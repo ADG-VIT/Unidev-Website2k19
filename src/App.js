@@ -1,6 +1,8 @@
 import React from 'react';
-import When from '../src/Pages/When/When';
-import About from '../src/Pages/About/About';
+import Home from './Pages/Home/Home';
+import Why from './Pages/Why/Why';
+import When from './Pages/When/When';
+import About from './Pages/About/About'; 
 import './App.css';
 
 class App extends React.Component {
@@ -8,7 +10,8 @@ class App extends React.Component {
         super(props);
 
         this.state = { 
-            page: <When />
+            page: <Home />,
+            color: 'black'
         };
         this.pageChangetoHome = this.pageChangetoHome.bind(this);
         this.pageChangetoWhy = this.pageChangetoWhy.bind(this);
@@ -17,43 +20,41 @@ class App extends React.Component {
     }
 
     pageChangetoHome() {
-        //this.setState({page: <Home />});
+        if(this.state.page !== <Home />) {
+            this.setState({page: <Home />, color: 'rgb(26,26,26)'});
         var element = [document.getElementById("why-nav"), document.getElementById("when-nav"), document.getElementById("about-nav")], i;
         for(i=0;i<3;i++) {
             element[i].className = element[i].className.replace(/\bactive\b/g, "");
         }
-        element = document.getElementById("home-nav");
-        element.className += " active";
+        document.getElementById("home-nav").className += " active";
+        }
     }
 
     pageChangetoWhy() {
-        //this.setState({page: <Why />});
+        this.setState({page: <Why />, color: 'white'});
         var element = [document.getElementById("home-nav"), document.getElementById("when-nav"), document.getElementById("about-nav")], i;
         for(i=0;i<3;i++) {
             element[i].className = element[i].className.replace(/\bactive\b/g, "");
         }
-        element = document.getElementById("why-nav");
-        element.className += " active";
+        document.getElementById("why-nav").className += " active";
     }
 
     pageChangetoWhen() {
-        this.setState({page: <When />});
+        this.setState({page: <When />, color: '#6600CC'});
         var element = [document.getElementById("home-nav"), document.getElementById("why-nav"), document.getElementById("about-nav")], i;
         for(i=0;i<3;i++) {
             element[i].className = element[i].className.replace(/\bactive\b/g, "");
         }
-        element = document.getElementById("when-nav");
-        element.className += " active";
+        document.getElementById("when-nav").className += " active";
     }
     
     pageChangetoAbout() {
-        this.setState({page: <About />});
+        this.setState({page: <About />, color: 'black'});
         var element = [document.getElementById("home-nav"), document.getElementById("why-nav"), document.getElementById("when-nav")], i;
         for(i=0;i<3;i++) {
             element[i].className = element[i].className.replace(/\bactive\b/g, "");
         }
-        element = document.getElementById("about-nav");
-        element.className += " active";
+        document.getElementById("about-nav").className += " active";
     }
 
     render() {
@@ -61,7 +62,7 @@ class App extends React.Component {
             <div id="grid">
                 <div>
                 </div>
-                <div id="content">
+                <div id="content" style={{backgroundColor: this.state.color}}>
                     {this.state.page}
                 </div>
                 <div>

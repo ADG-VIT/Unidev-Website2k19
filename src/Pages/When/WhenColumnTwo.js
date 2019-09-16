@@ -8,8 +8,8 @@ const text = "Quel in niuno il fatica e credere, alla ingannati verso del sempre
 const WhenColumnTwo = () => {
     return (
         <div>
-            <Heading intext="WHEN AND" />
-            <Heading intext="WHERE" />
+            <p className="whenhead">WHEN AND</p>
+            <p className="whenhead">WHERE</p>
             <SubHeading intext="WHERE WE CHILL" />
             <Para intext={text} />
         </div>

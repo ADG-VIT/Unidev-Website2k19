@@ -3,7 +3,7 @@ import adg_logo from '../Images/adg-logo.png';
 
 const Logo = () => {
         return (    
-            <div className="logo">
+            <div className="Logo">
                 <img src={adg_logo} alt="" className="app-logo" />
             </div>
         );
