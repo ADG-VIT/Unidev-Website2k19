@@ -7,9 +7,8 @@ const Home = () => {
     return (
         <div id = "home">
             <div></div>
-            <HomeColumnOne id="home1"/>
-            <div></div>
-            <HomeColumnTwo id="home2"/>
+            <HomeColumnOne/>
+            <HomeColumnTwo/>
         </div>
     );
 }

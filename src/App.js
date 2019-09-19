@@ -10,8 +10,8 @@ class App extends React.Component {
         super(props);
 
         this.state = { 
-            page: <Home />,
-            color: 'black'
+            page: <Why />,
+            color: 'white'
         };
         this.pageChangetoHome = this.pageChangetoHome.bind(this);
         this.pageChangetoWhy = this.pageChangetoWhy.bind(this);
@@ -60,19 +60,17 @@ class App extends React.Component {
     render() {
         return (
             <div id="grid">
-                <div>
-                </div>
+                
                 <div id="content" style={{backgroundColor: this.state.color}}>
                     {this.state.page}
                 </div>
-                <div>
-                </div>
+                
                 <div id="navbar">
                     <div className="navbar-element-div">
-                    <p id="home-nav" onClick={this.pageChangetoHome} className="navbar-element active">HOME</p>
+                    <p id="home-nav" onClick={this.pageChangetoHome} className="navbar-element">HOME</p>
                     </div>
                     <div className="navbar-element-div">
-                    <p id="why-nav" onClick={this.pageChangetoWhy} className="navbar-element">WHY ATTEND</p>
+                    <p id="why-nav" onClick={this.pageChangetoWhy} className="navbar-element active">WHY ATTEND</p>
                     </div>
                     <div className="navbar-element-div">
                     <p id="when-nav" onClick={this.pageChangetoWhen} className="navbar-element">WHEN AND WHERE</p>

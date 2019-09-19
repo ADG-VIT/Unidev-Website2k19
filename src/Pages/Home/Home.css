@@ -1,5 +1,28 @@
 #home {
-    display: grid;
-    grid-template-columns: 5% 55% 5% 25%;
     color: white;
+}
+
+@media only screen and (min-width: 600px) {
+    #home {
+        display: grid;
+        grid-template-columns: 5% 55% 25%;
+    }
+}
+
+@media only screen and (max-width: 328px) {
+    
+}
+
+#homesub {
+    margin-top: 5vh;
+}
+
+#homepara {
+    width: 80%;
+    border: 10px white solid;
+    padding: 2vh;
+    text-align: justify;
+    border-radius: 20px;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
 }

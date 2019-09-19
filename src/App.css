@@ -7,9 +7,22 @@ body {
     height: 100vh;
     overflow: hidden;
     font-family: 'Lato', sans-serif;
+    line-height: 1;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 600px) {
+
+    #content {
+        padding: 10vh 0vw 0vw 10vw;
+    }
+
+    body {
+        overflow: hidden;
+    }
+}
+
+@media only screen and (max-width: 424px) {
+
     .Logo {
         display: none;
     }
@@ -17,6 +30,7 @@ body {
 
 #content {
     height: 100vh;
+    padding-top: 5vh;
     
 }
 
@@ -29,7 +43,6 @@ body {
     width: 7vw;
     margin-right: 0 !important;
     z-index: 2;
-    height: 120vh;
 }
 
 .navbar-element {
@@ -42,41 +55,37 @@ body {
     font-weight: 900;
 }
 
-.navbar-element-div {
-    
-    width: 100%;
-      
-}
-
 .active {
     border-left: 2px red solid;
 }
 
 .image {
-    width: 100%;
+    max-width: 100%;
     height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 90vh;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
-.image-div {
-    max-height: 100px;
-    width: auto;
-    
-}
 
 .para {
-    font-size: 10vh;
+    font-size: 1.25em;
 }
 
 .heading {
-    font-size: 20vh;
+    font-size: 8em;
     font-weight: 700;
-    letter-spacing: 0px;
 }
 
 .subhead {
-    font-size: 10vh;
+    font-size: 3em;
     font-weight: 500;
 }
+
+
 
 @media only screen and (max-width: 1000px) {
     .heading {
@@ -86,4 +95,19 @@ body {
     .subhead {
         font-size: 5vw;
     }
+}
+@media only screen and (max-width: 600px) {
+    .image {
+        display: none;
+        /*height: 40vh;
+        width: auto;*/
+    }
+}
+
+.Logo {
+    margin-bottom: 3vh;
+}
+
+.subpara {
+    font-size: 1.4em;
 }

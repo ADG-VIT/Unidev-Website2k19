@@ -1,6 +1,6 @@
 #why {
     display: grid;
-    grid-template-columns: 5% 40% 10% 35%;
+    grid-template-columns: 5% 40% 5% 35%;
 }
 
 .whywhy {
@@ -9,15 +9,13 @@
     letter-spacing: 0px;
     color: white;
     text-shadow: 1px 0px black, 0px 1px black, -1px 0px black, 0px -1px black;
+    line-height: 0.8;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
 }
 
 @media only screen and (max-width: 1000px) {
     .whywhy {
         font-size: 10vw;
     }
-}
-
-.whyimage {
-    display: grid;
-    grid-template-columns: 20% 60% 20%;
 }

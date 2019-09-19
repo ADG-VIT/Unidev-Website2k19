@@ -1,7 +1,6 @@
 import React from 'react';
-import Heading from '../../Components/Heading';
 import SubHeading from '../../Components/SubHeading';
-import Para from '../../Components/Para';
+import Subpara from '../../Components/SubPara';
 import adg__logo from '../../Images/ADG-logo(black).png';
 
 const text = "Lorem ipsum dolar sit amet, consectetur adipiscing elit";
@@ -18,7 +17,9 @@ const WhyColumnOne = () => {
             ATTEND
             </div>
             <SubHeading intext="GAME.FILTERS.LIFE" />
-            <Para intext={text} />
+            <div className="subpara">
+            <Subpara intext={text} />
+            </div>
         </div>
     )
 }
