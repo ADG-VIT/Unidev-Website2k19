@@ -11,8 +11,10 @@ const AboutColumnOne = () => {
         <div>
             <Logo />
             <Heading intext="ABOUT ADG" />
+            <div className="aboutsubhead">
             <SubHeading intext="THE COOL BOIS" />
-            <SubPara intext={text} />
+            </div>
+            <SubPara className="aboutsubpara" intext={text} />
         </div>    
     )
 }

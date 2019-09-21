@@ -10,24 +10,6 @@ body {
     line-height: 1;
 }
 
-@media only screen and (max-width: 600px) {
-
-    #content {
-        padding: 10vh 0vw 0vw 10vw;
-    }
-
-    body {
-        overflow: hidden;
-    }
-}
-
-@media only screen and (max-width: 424px) {
-
-    .Logo {
-        display: none;
-    }
-}
-
 #content {
     height: 100vh;
     padding-top: 5vh;
@@ -35,7 +17,7 @@ body {
 }
 
 #navbar {
-    background-color: rgba(15,15,15);
+    background-color: rgba(0,0,0);
     height: 100vh;
     position: absolute;
     top: 0;
@@ -76,18 +58,16 @@ body {
 }
 
 .heading {
-    font-size: 8em;
+    font-size: 20vh;
     font-weight: 700;
 }
 
 .subhead {
-    font-size: 3em;
+    font-size: 8vh;
     font-weight: 500;
 }
 
-
-
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1000px) and (min-width: 601px) {
     .heading {
         font-size: 10vw;
     }
@@ -95,12 +75,56 @@ body {
     .subhead {
         font-size: 5vw;
     }
+
+    .image {
+        margin-top: 10vh;
+    }
+
+    .para {
+        font-size: 0.9em;
+    }
 }
 @media only screen and (max-width: 600px) {
     .image {
         display: none;
-        /*height: 40vh;
-        width: auto;*/
+        /* height: 40vh;
+        width: auto; */
+    }
+
+    .heading {
+        font-size: 14vw;
+        font-weight: 700;
+    }
+    
+    .subhead {
+        font-size: 8vw;
+        font-weight: 500;
+    }
+
+    .subpara {
+        font-size: 1.5em;
+        width: 90%;
+    }
+
+    #content {
+        padding: 5vh 0vw 0vw 10vw;
+    }
+
+    body {
+        overflow: hidden;
+    }
+
+    #content {
+        height: 100vh;
+        padding-top: 5vh;   
+    }
+
+    .Logo {
+        display: none;
+    }
+
+    .para {
+        font-size: 0.95em;
     }
 }
 
@@ -109,5 +133,6 @@ body {
 }
 
 .subpara {
-    font-size: 1.4em;
+    font-size: 1.5em;
+    width: 90%;
 }

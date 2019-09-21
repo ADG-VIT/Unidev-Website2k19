@@ -49,7 +49,7 @@ class App extends React.Component {
     }
     
     pageChangetoAbout() {
-        this.setState({page: <About />, color: 'black'});
+        this.setState({page: <About />, color: 'rgb(26,26,26)'});
         var element = [document.getElementById("home-nav"), document.getElementById("why-nav"), document.getElementById("when-nav")], i;
         for(i=0;i<3;i++) {
             element[i].className = element[i].className.replace(/\bactive\b/g, "");
@@ -59,18 +59,13 @@ class App extends React.Component {
 
     render() {
         return (
-            <div id="grid">
-                
-                <div id="content" style={{backgroundColor: this.state.color}}>
-                    {this.state.page}
-                </div>
-                
+            <div id="grid">                
                 <div id="navbar">
                     <div className="navbar-element-div">
-                    <p id="home-nav" onClick={this.pageChangetoHome} className="navbar-element">HOME</p>
+                    <p id="home-nav" onClick={this.pageChangetoHome} className="navbar-element active">HOME</p>
                     </div>
                     <div className="navbar-element-div">
-                    <p id="why-nav" onClick={this.pageChangetoWhy} className="navbar-element active">WHY ATTEND</p>
+                    <p id="why-nav" onClick={this.pageChangetoWhy} className="navbar-element">WHY ATTEND</p>
                     </div>
                     <div className="navbar-element-div">
                     <p id="when-nav" onClick={this.pageChangetoWhen} className="navbar-element">WHEN AND WHERE</p>
@@ -79,7 +74,9 @@ class App extends React.Component {
                     <p id="about-nav" onClick={this.pageChangetoAbout} className="navbar-element">ABOUT ADG</p>
                     </div>
                 </div>
-
+                <div id="content" style={{backgroundColor: this.state.color}}>
+                    {this.state.page}
+                </div>
             </div>
         );
     }

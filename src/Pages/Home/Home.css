@@ -2,27 +2,27 @@
     color: white;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 601px) {
     #home {
         display: grid;
         grid-template-columns: 5% 55% 25%;
     }
 }
 
-@media only screen and (max-width: 328px) {
-    
-}
-
-#homesub {
-    margin-top: 5vh;
+.homesubhead2 {
+    margin-top: 0;
+    padding-top: 0;
 }
 
 #homepara {
-    width: 80%;
-    border: 10px white solid;
-    padding: 2vh;
+    width: 85%;
     text-align: justify;
-    border-radius: 20px;
     margin-top: 2vh;
     margin-bottom: 2vh;
+}
+
+.homehead {
+    margin-bottom: 0;
+    line-height: 0.7;
+    padding-bottom: 0;
 }

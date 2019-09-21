@@ -16,8 +16,8 @@ const WhyColumnOne = () => {
             <br/>
             ATTEND
             </div>
-            <SubHeading intext="GAME.FILTERS.LIFE" />
-            <div className="subpara">
+            <SubHeading intext="GAMES. FILTERS. LIFE" />
+            <div id="whysubpara">
             <Subpara intext={text} />
             </div>
         </div>

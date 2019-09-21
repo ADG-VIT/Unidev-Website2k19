@@ -4,14 +4,15 @@ import Image from '../../Components/Image';
 import Para from '../../Components/Para';
 import './Why.css';
 
-const text = "Diam ut sed stet dolor sadipscing nonumy ipsum ea est invidunt. At gubergren dolor sadipscing et, ipsum amet labore et ipsum dolores at nonumy labore. Duo et sanctus ipsum vero sea tempor ipsum at, gubergren elitr et dolor ipsum dolore sanctus stet diam. Sit stet dolor magna et tempor. Tempor.";
+const text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tristique enim et urna fermentum consectetur. porta gravida nunc. Praesent sodales nisi at dolor laoreet, eu gravida orci convallis. Maecenas hendrerit varius velit, ut pulvinar tellus mollis sit amet. Vivamus finibus tempus nunc eu pellentesque. Aliquam faucibus ex leo, vitae rhoncus leo tincidunt at. Sed vehicula ante quis ipsum lobortis viverra. Curabitur pretium, quam commodo aliquet hendrerit, dolor leo pellentesque arcu, eu tincidunt urna diam id mi. Ut eu neque vel magna luctus iaculis. Proin luctus bibendum diam maximus euismod. In in ante sit amet nunc molestie efficitur.";
 
 const WhyColumnTwo = () => {
     return (
         <div>
             <Image source={map} className="image" />
-            <img className="image" alt=""/>
-            <Para intext={text} />
+            <div id="whypara">
+            <Para className="whypara" intext={text} />
+            </div>
         </div>
     )
 }

@@ -1,6 +1,5 @@
 #why {
-    display: grid;
-    grid-template-columns: 5% 40% 5% 35%;
+    color: black;
 }
 
 .whywhy {
@@ -11,11 +10,34 @@
     text-shadow: 1px 0px black, 0px 1px black, -1px 0px black, 0px -1px black;
     line-height: 0.8;
     margin-top: 10vh;
-    margin-bottom: 5vh;
 }
 
 @media only screen and (max-width: 1000px) {
     .whywhy {
         font-size: 10vw;
     }
+}
+
+@media only screen and (min-width: 601px) {
+    #why {
+        display: grid;
+        grid-template-columns: 5% 40% 0% 45%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .whywhy {
+        margin-top: 5vh;
+    }
+    #whypara {
+        width: 85%;
+    }
+}
+
+#whysubpara {
+    margin-top:5vh;
+}
+
+#whypara {
+    text-align: justify;
 }
