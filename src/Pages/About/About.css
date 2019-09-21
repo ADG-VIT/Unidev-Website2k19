@@ -1,0 +1,36 @@
+#about {
+    color: white;
+}
+
+.aboutimage {
+    max-width: 30vw;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 5vh;
+}
+
+@media only screen and (min-width: 601px) {
+    #about {
+        display: grid;
+        grid-template-columns: 5% 35% 5% 45%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .aboutsubhead {
+        margin-bottom: 10vh;
+    }
+
+    .aboutsubpara {
+        margin-bottom: 0;
+        
+    }
+}
+
+.aboutpara {
+    width: 85%;
+    text-align: justify;
+    margin-top: 0;
+}

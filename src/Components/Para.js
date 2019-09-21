@@ -2,7 +2,7 @@ import React from 'react';
 
 const Para = (props) => {
     return (
-        <div>
+        <div className="para">
             {props.intext}
         </div>
     )

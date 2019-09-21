@@ -2,7 +2,7 @@ import React from 'react';
 
 const SubHeading = (props) => {
     return (
-        <div>
+        <div className="subhead">
             {props.intext}
         </div>
     )

@@ -1,10 +1,138 @@
-/*@media only screen and (max-width: 1000px) {
-    .app-logo {
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Lato', sans-serif;
+    line-height: 1;
+}
+
+#content {
+    height: 100vh;
+    padding-top: 5vh;
+    
+}
+
+#navbar {
+    background-color: rgba(0,0,0);
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 7vw;
+    margin-right: 0 !important;
+    z-index: 2;
+}
+
+.navbar-element {
+    color: white;
+    text-decoration: none;    
+    writing-mode: vertical-rl;
+    word-spacing: 0.9vh;
+    padding: 3vh 3vw;
+    font-size: 0.9em;
+    font-weight: 900;
+}
+
+.active {
+    border-left: 2px red solid;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 90vh;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+.para {
+    font-size: 1.25em;
+}
+
+.heading {
+    font-size: 20vh;
+    font-weight: 700;
+}
+
+.subhead {
+    font-size: 8vh;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 601px) {
+    .heading {
+        font-size: 10vw;
+    }
+    
+    .subhead {
+        font-size: 5vw;
+    }
+
+    .image {
+        margin-top: 10vh;
+    }
+
+    .para {
+        font-size: 0.9em;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .image {
+        display: none;
+        /* height: 40vh;
+        width: auto; */
+    }
+
+    .heading {
+        font-size: 14vw;
+        font-weight: 700;
+    }
+    
+    .subhead {
+        font-size: 8vw;
+        font-weight: 500;
+    }
+
+    .subpara {
+        font-size: 1.5em;
+        width: 90%;
+    }
+
+    #content {
+        padding: 5vh 0vw 0vw 10vw;
+    }
+
+    body {
+        overflow: hidden;
+    }
+
+    #content {
+        height: 100vh;
+        padding-top: 5vh;   
+    }
+
+    .Logo {
         display: none;
     }
-}*/
 
-@font-face {
-    font-family: heading;
-    src: url("./Fonts/DINCondensed-Bold.ttf");
+    .para {
+        font-size: 0.95em;
+    }
+}
+
+.Logo {
+    margin-bottom: 3vh;
+}
+
+.subpara {
+    font-size: 1.5em;
+    width: 90%;
 }

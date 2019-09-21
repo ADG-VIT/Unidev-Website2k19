@@ -8,8 +8,12 @@ const text = "Gehn mein mund gesellschaft von darfst. Wo wo glück und oft der, 
 const AboutColumnTwo = () => {
     return (
         <div>
+            <div className="aboutimage">
             <Image source={Team} />
-            <Para intext={text} />           
+            </div>
+            <div className="aboutpara">
+            <Para intext={text} /> 
+            </div>          
         </div>
     )
 }
