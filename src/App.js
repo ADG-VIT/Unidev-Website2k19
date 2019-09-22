@@ -4,14 +4,15 @@ import Why from './Pages/Why/Why';
 import When from './Pages/When/When';
 import About from './Pages/About/About'; 
 import './App.css';
+import { AnimateOnChange } from 'react-animation'
 
 class App extends React.Component {
     constructor(props) {
         super(props);
 
         this.state = { 
-            page: <Why />,
-            color: 'white'
+            page: <Home />,
+            color: 'rgb(26,26,26)'
         };
         this.pageChangetoHome = this.pageChangetoHome.bind(this);
         this.pageChangetoWhy = this.pageChangetoWhy.bind(this);
@@ -59,6 +60,7 @@ class App extends React.Component {
 
     render() {
         return (
+            <AnimateOnChange animationIn="slideIn" animationOut="slideOut" durationIn="1000">
             <div id="grid">                
                 <div id="navbar">
                     <div className="navbar-element-div">
@@ -78,6 +80,7 @@ class App extends React.Component {
                     {this.state.page}
                 </div>
             </div>
+            </AnimateOnChange>
         );
     }
         

@@ -1,5 +1,6 @@
 #home {
     color: white;
+    
 }
 
 @media only screen and (min-width: 601px) {
@@ -8,10 +9,18 @@
         grid-template-columns: 5% 55% 25%;
     }
 }
+.container{
+    animation-duration: 1.6s;
+    animation-delay: .1s;
+     -webkit-animation-duration: 1.6s;
+     -webkit-animation-delay: .1s;
+     height: 95vh;
+}
 
 .homesubhead2 {
     margin-top: 0;
     padding-top: 0;
+   
 }
 
 #homepara {
