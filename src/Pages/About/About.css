@@ -18,15 +18,17 @@
 }
 
 @media only screen and (max-width: 600px) {
-
-    .aboutsubhead {
-        margin-bottom: 10vh;
-    }
-
     .aboutsubpara {
         margin-bottom: 0;
-        
     }
+
+    .abouthead {
+        margin-top: 0;
+    }
+}
+
+.abouthead {
+    line-height: 0.75;
 }
 
 .aboutpara {

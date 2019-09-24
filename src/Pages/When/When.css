@@ -36,7 +36,7 @@
 @media only screen and (max-width: 600px) {
     .whenhead {
         text-align: left;
-        margin-top: 5vh;
+        margin-top: 0;
     }
     
     .whensubhead {

@@ -10,11 +10,16 @@ const AboutColumnOne = () => {
     return (
         <div>
             <Logo />
-            <Heading intext="ABOUT ADG" />
+            <div className="abouthead">
+            <Heading intext="ABOUT " />
+            <Heading intext="ADG" />
+            </div>
             <div className="aboutsubhead">
             <SubHeading intext="THE COOL BOIS" />
             </div>
-            <SubPara className="aboutsubpara" intext={text} />
+            <div className="aboutsubpara">
+            <SubPara intext={text} />
+            </div>
         </div>    
     )
 }

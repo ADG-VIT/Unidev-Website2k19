@@ -24,7 +24,7 @@ body {
     right: 0;
     width: 7vw;
     margin-right: 0 !important;
-    z-index: 2;
+    z-index: 4;
 }
 
 .navbar-element {
@@ -85,14 +85,16 @@ body {
     }
 }
 @media only screen and (max-width: 600px) {
+    body {
+        overflow-y: visible;
+    }
+
     .image {
         display: none;
-        /* height: 40vh;
-        width: auto; */
     }
 
     .heading {
-        font-size: 14vw;
+        font-size: 12vw;
         font-weight: 700;
     }
     
@@ -107,16 +109,8 @@ body {
     }
 
     #content {
-        padding: 5vh 0vw 0vw 10vw;
-    }
-
-    body {
-        overflow: hidden;
-    }
-
-    #content {
-        height: 100vh;
-        padding-top: 5vh;   
+        padding: 5vh 0vw 5vh 10vw;
+        height: min-content;
     }
 
     .Logo {
@@ -124,7 +118,54 @@ body {
     }
 
     .para {
-        font-size: 0.95em;
+        font-size: 16px;
+    }
+
+    #navbar {
+        right: -50vw;
+        top: 0;
+        width: 50vw;
+        height: max-content;
+        z-index: 4;
+    }
+
+    .navbar-element {
+        writing-mode: horizontal-tb;
+        padding: 10% 5%;
+    }
+
+    .abouthead {
+        font-size: 1.7em;
+    }
+
+    .burger {
+        width: 30px;
+        margin: 4px 0;
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 2px;
+        
+    }
+
+    #burger {
+        width: min-content;
+        background-color: rgba(0, 0, 0, 0);
+        position: relative;
+        left: 70vw;
+    }
+
+    .aboutsubpara {
+        margin-top: 5vh;
+        font-size: 0.8em;
+    }
+
+    #blur {
+        width: 100vw;
+        height: 100vh;
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        right: 200vw;
     }
 }
 
