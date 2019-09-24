@@ -82,12 +82,12 @@ class App extends React.Component {
 
     render() {
         document.body.style.backgroundColor = this.state.color;
-        if(window.innerWidth < 601)
-            this.closeDrawer();
         return (
             <div id="grid">   
-                <div id="blur" onClick={this.closeDrawer}></div>             
+                <div id="blur" onClick={this.closeDrawer}></div> 
+                <div id="navbar">
                 <Navbar changetoHome={this.pageChangetoHome} changetoWhy={this.pageChangetoWhy} changetoWhen={this.pageChangetoWhen} changetoAbout={this.pageChangetoAbout} />
+                </div>
                 <div id="content" style={{backgroundColor: this.state.color}}>
                     <div id="burger" onClick={this.openDrawer}>
                         <Burger colour={this.state.bcolor} />

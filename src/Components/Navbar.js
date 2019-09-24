@@ -3,7 +3,7 @@ import React from 'react';
 const Navbar = (props) => {
     return (
     <div>
-        <div id="navbar">
+        <div className="navbar">
             <div className="navbar-element-div">
                 <p id="home-nav" onClick={props.changetoHome} className="navbar-element active">HOME</p>
             </div>
